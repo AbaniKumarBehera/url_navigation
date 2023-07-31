@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <centre>
+        {% if a > b %}
+        {% if a > c %}
+            <h1> a is highest</h1>
+        {% else %}
+            <h1>c is highest</h1>
+        {% endif %}
+    {% else %}
+    {% if b > c %}
+        <h1> b is  highest</h1>
+    {% else %}
+        <h1>c is highest</h1>
+    {% endif %}
+    {% endif %}
+    <a href="{% url 'for_loop' %}">click here to go to forloop page</a>
+    </centre>
+   
+            
+</body>
+</html>
